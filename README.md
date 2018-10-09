@@ -8,7 +8,11 @@
 <img src="https://raw.githubusercontent.com/ryota-murakami/flow-typedef/master/img/Screen%20Shot%202018-10-10%20at%200.01.01.png" height="300" />
 <p/>
 
-**get Flow built-in type definition files.**
+> **get Flow built-in type definition files.**
+
+## Why
+Flow Buit-in type definition files are hosted [facebook/flow](https://github.com/facebook/flow/tree/master/lib).  
+If you would like to get those files some reason, [you have to manual copy](https://github.com/facebook/flow/issues/922#issuecomment-146940723).  
 
 ## Install
 recommend global install
@@ -17,15 +21,10 @@ $ yarn global add flow-typedef
 ```
 
 ## Usage
-in the `flow-bin` installed project folder
+in the `flow-bin` installed project folder  
+then typedef files generated at`flow-typed/built-in`
 ```
 $ flow-typedef
 ```
 
-`flow-typedef` detect your flow-bin version and get same version typedef files.
-
-## Why
-Flow Buit-in type definition files are hosted [facebook/flow](https://github.com/facebook/flow/tree/master/lib).  
-If would you like to get in my repo some reason, [you had to](Manual DL & copy).  
-
-I'm WebStorm Person, adding Flow Buit-in typedef in [libdef] folder is efficiently hack r especially auto-complete.
+`flow-typedef` detect your flow-bin version and get same version typedef files
