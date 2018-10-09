@@ -18,7 +18,7 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout, stderr) => {
     if (cap === null) {
       console.error(
         chalk.bgRed.bold(
-          'flow-bin not found. please make sure current directory is same as package.json or flow-bin installed correctly.'
+          'flow-bin not found in package.json. please make sure "yarn add -D flow-bin".'
         )
       )
       process.exit(1)
@@ -39,7 +39,9 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout, stderr) => {
     execSync('rm -rf flow', { stdio: [0, 1, 2] })
 
     console.log(
-      chalk.green.bold('\n\nInstalled Flow built-in type definition!\n')
+      chalk.bgWhiteBright.green.bold(
+        '\n\nInstalled Flow built-in type definition!\n'
+      )
     )
   }
 })
