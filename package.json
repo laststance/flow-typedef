@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "bin": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "flow",
@@ -17,6 +17,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.6.1",
     "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
     "prettier": "^1.14.3"
   },
   "dependencies": {
