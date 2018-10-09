@@ -23,3 +23,9 @@ $ flow-typedef
 ```
 
 `flow-typedef` detect your flow-bin version and get same version typedef files.
+
+## Why
+Flow Buit-in type definition files are hosted [facebook/flow](https://github.com/facebook/flow/tree/master/lib).  
+If would you like to get in my repo some reason, [you had to](Manual DL & copy).  
+
+I'm WebStorm Person, adding Flow Buit-in typedef in [libdef] folder is efficiently hack r especially auto-complete.
