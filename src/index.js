@@ -37,5 +37,7 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout, stderr) => {
     // => copy raw typedef files flow pore to my repo
     execSync('cp flow/lib/* flow-typed/built-in')
     execSync('rm -rf flow')
+
+    console.log(chalk.bgGreen.bold('Installed Flow built-in type definition!'))
   }
 })
