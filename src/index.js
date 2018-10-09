@@ -12,7 +12,7 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout, stderr) => {
   }
   if (stderr) console.log(chalk.bgRed.bold(`stderr: ${stderr}`))
 
-  // => Found "flow-bin@0.82.0" from "yarn why flow-bin" output string
+  // => Found "flow-bin@0.xx.0" from "yarn why flow-bin" output string
   if (stdout) {
     const cap = stdout.match(/flow-bin@[0-9]\.[0-9]{2,}\.[0-9]/)
     if (cap === null) {
@@ -23,10 +23,10 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout, stderr) => {
       )
       process.exit(1)
     }
-    // extract "0.82.0" from "flow-bin@0.82.0"
+    // extract "0.xx.0" from "flow-bin@0.xx.0"
     const semver = cap[0].split('@')[1]
 
-    // => git clone flow@0.82.0
+    // => git clone flow@0.xx.0
     execSync(`git clone --branch v${semver} git@github.com:facebook/flow.git`, {
       stdio: [0, 1, 2]
     })
