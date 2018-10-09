@@ -17,9 +17,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.6.1",
     "eslint-plugin-prettier": "^3.0.0",
-    "flow-bin": "^0.82.0",
-    "prettier": "^1.14.3",
-    "yarn": "^1.10.1"
+    "prettier": "^1.14.3"
   },
   "dependencies": {
     "chalk": "^2.4.1"

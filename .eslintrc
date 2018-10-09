@@ -12,7 +12,6 @@
       {
         "singleQuote": true,
         "semi": false,
-        "parser": "flow"
       }
     ],
     "jsx-a11y/href-no-hash": "off",
