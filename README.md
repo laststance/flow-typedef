@@ -8,7 +8,7 @@
 <img src="https://raw.githubusercontent.com/ryota-murakami/flow-typedef/master/img/Screen%20Shot%202018-10-10%20at%200.01.01.png" height="300" />
 <p/>
 
-get Flow built-in type definition files.
+**get Flow built-in type definition files.**
 
 ## Install
 recommend global install
