@@ -39,9 +39,7 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout, stderr) => {
     execSync('rm -rf flow', { stdio: [0, 1, 2] })
 
     console.log(
-      chalk.green.bold(
-        '\n\nInstalled Flow built-in type definition!\n'
-      )
+      chalk.green.bold('\n\nInstalled Flow built-in type definition!\n')
     )
   }
 })
