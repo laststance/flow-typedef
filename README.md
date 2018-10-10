@@ -1,5 +1,4 @@
-# flow-typedef  [![npm version](https://badge.fury.io/js/flow-typedef.svg)](https://badge.fury.io/js/flow-typedef)
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
+# flow-typedef  [![npm version](https://badge.fury.io/js/flow-typedef.svg)](https://badge.fury.io/js/flow-typedef) [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ryota-murakami/flow-typedef/master/img/Screen%20Shot%202018-10-10%20at%200.05.17.png" height="300"/>
