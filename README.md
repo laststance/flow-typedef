@@ -8,18 +8,6 @@
 <img src="https://raw.githubusercontent.com/ryota-murakami/flow-typedef/master/img/Screen%20Shot%202018-10-10%20at%200.01.01.png" height="300" />
 <p/>
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-
-- [Why](#why)
-- [Getting Started](#getting-started)
-- [Install](#install)
-- [Usage](#usage)
-- [Contributors](#contributors)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 > **get Flow built-in type definition files.**
 
 ## Why
