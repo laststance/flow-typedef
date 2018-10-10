@@ -1,6 +1,6 @@
 {
   "name": "flow-typedef",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "get Flow built-in type definition files",
   "keywords": [
     "flow",
