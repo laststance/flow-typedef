@@ -1,3 +1,5 @@
+# Flow Typedef · [![npm version](https://badge.fury.io/js/flow-typedef.svg)](https://badge.fury.io/js/flow-typedef) [![CircleCI](https://circleci.com/gh/ryota-murakami/flow-typedef.svg?style=svg)](https://circleci.com/gh/ryota-murakami/flow-typedef) [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -9,8 +11,6 @@
   - [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Flow Typedef  [![npm version](https://badge.fury.io/js/flow-typedef.svg)](https://badge.fury.io/js/flow-typedef) [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ryota-murakami/flow-typedef/master/img/Screen%20Shot%202018-10-10%20at%200.05.17.png" height="300"/>
@@ -25,6 +25,9 @@
 ## Why
 Flow Buit-in type definition files are hosted [facebook/flow](https://github.com/facebook/flow/tree/master/lib).  
 If you would like to get those files some reason, [you have to manual copy](https://github.com/facebook/flow/issues/922#issuecomment-146940723).  
+
+## Getting Started
+I Assume you have experience of [flow-type](https://github.com/flow-typed/flow-typed). Otherwise you might be start from [flow-type](https://github.com/flow-typed/flow-typed).  
 
 ## Install
 **recommend global install**
