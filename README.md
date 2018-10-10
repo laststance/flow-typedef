@@ -14,6 +14,9 @@
 Flow Buit-in type definition files are hosted [facebook/flow](https://github.com/facebook/flow/tree/master/lib).  
 If you would like to get those files some reason, [you have to manual copy](https://github.com/facebook/flow/issues/922#issuecomment-146940723).  
 
+## Getting Started
+I Assume you have experience of [flow-type](https://github.com/flow-typed/flow-typed). Otherwise you might be start from [flow-type](https://github.com/flow-typed/flow-typed).  
+
 ## Install
 **recommend global install**
 ```
