@@ -24,13 +24,37 @@ $ yarn global add flow-typedef
 ```
 
 ## Usage
-in the `flow-bin` installed project folder,
+In the `flow-bin` installed project folder,
 then typedef files generated at`flow-typed/built-in`.
 ```
 $ flow-typedef
 ```
 
 `flow-typedef` detect your flow-bin version and get same version typedef files.
+
+And more, I reccomend following setting.
+
+```js
+// .flowconfig
+
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+no_flowlib=true
+
+[strict]
+
+```
+
+Because Flow built in lib def already there in your `/flow-typed`.  
+see option detail https://flow.org/en/docs/config/options/#toc-no-flowlib-boolean
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
