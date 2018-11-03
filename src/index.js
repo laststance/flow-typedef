@@ -29,7 +29,7 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
       )
       process.exit(1)
     }
-    // extract "0.xx.0" from "flow-bin@0.xx.0"
+    // Extract "0.xx.0" from "flow-bin@0.xx.0"
     const semver = cap[0].split('@')[1]
 
     // git clone flow@0.xx.0
@@ -37,14 +37,14 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
       stdio: [0, 1, 2]
     })
 
-    // create flow-typed/build-in directory
+    // Create flow-typed/build-in directory
     execSync('mkdir -p flow-typed/built-in', { stdio: [0, 1, 2] })
 
-    // copy raw typedef files flow repo to my repo
+    // Copy raw typedef files flow repo to my repo
     execSync('cp flow/lib/* flow-typed/built-in', { stdio: [0, 1, 2] })
     execSync('rm -rf flow', { stdio: [0, 1, 2] })
 
-    // copy UtilityTypes
+    // Copy UtilityTypes
     execSync(`cp ${__dirname}/UtilityTypes.js flow-typed/UtilityTypes.js`, {
       stdio: [0, 1, 2]
     })
