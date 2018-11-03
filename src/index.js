@@ -18,7 +18,7 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
     process.exit(1)
   }
 
-  // Found "flow-bin@0.xx.0" from "yarn why flow-bin" output string
+  // Extract "flow-bin@0.xx.0" from "yarn why flow-bin" output string
   if (stdout) {
     const cap = stdout.match(/flow-bin@[0-9]\.[0-9]{2,}\.[0-9]/)
     if (cap === null) {
