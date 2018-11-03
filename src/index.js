@@ -52,5 +52,6 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
     console.log(
       chalk.green.bold('\n\nInstalled Flow built-in type definition!\n')
     )
+    process.exit(0)
   }
 })
