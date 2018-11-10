@@ -24,9 +24,10 @@ $ yarn global add flow-typedef
 ```
 
 ## Usage
-In the `flow-bin` installed project folder,
-then typedef files generated at`flow-typed/built-in`.
+In the same directory as `package.json` that `flow-bin` installed(almost where is project root),
+execute `flow-typedef` command. Then typedef files will be generated under the `flow-typed/built-in`.
 ```
+# cd your-project-dir
 $ flow-typedef
 ```
 
