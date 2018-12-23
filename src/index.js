@@ -25,7 +25,7 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
 
   const isFlowExists = fs.existsSync(__dirname + '/flow')
   if (isFlowExists) {
-    execSync(`cd ${__dirname} && git pull origin master`, {
+    execSync(`cd ${__dirname}/flow && git pull origin master`, {
       stdio: [0, 1, 2]
     })
   } else {
