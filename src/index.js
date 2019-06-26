@@ -12,7 +12,7 @@ cli
   .alias(`v`, `version`)
   .help().argv
 
-// Confirm whether installed 'flow-bin' and get version info
+// Confirm whether installed 'flow-bin' or not and get version info
 exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
   if (error) {
     console.error(chalk.bgRed.bold(`exec error: ${error}`))
@@ -22,7 +22,6 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
   /**
    * Prepare Flow repository
    */
-
   const isFlowExists = fs.existsSync(__dirname + '/flow')
   if (isFlowExists) {
     execSync(`cd ${__dirname}/flow && git pull origin master`, {
@@ -37,7 +36,6 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
   /**
    * Specify installed Flow version
    */
-
   // Extract "flow-bin@0.xx.0" from "yarn why flow-bin" output string
   const cap = stdout.match(/flow-bin@[0-9]\.[0-9]{2,}\.[0-9]/)
   if (cap === null) {
@@ -60,7 +58,6 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
   /**
    * Put Flow built-in type definition files
    */
-
   // Create flow-typed/build-in directory
   execSync('mkdir -p flow-typed/built-in', { stdio: [0, 1, 2] })
 
@@ -77,7 +74,6 @@ exec('yarn why flow-bin', { stdio: [0, 1, 2] }, (error, stdout) => {
   /**
    * Finish
    */
-
   // Return from detached HEAD
   execSync(`cd ${__dirname}/flow && git checkout master`, {
     stdio: [0, 1, 2]
